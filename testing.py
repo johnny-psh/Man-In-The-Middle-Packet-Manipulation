@@ -15,7 +15,7 @@ def modify(packet):
 
     if pktInfo.haslayer(TCP) and pktInfo.getlayer(TCP).dport == 7777 and similar in pktHex:
         pktDefault = pktHex[:104]
-        pktEdit = pktHex[104:                                   ]
+        pktEdit = pktHex[104:]
 
         pktSave = pktEdit[16:]
         pktSave = newData + pktSave
